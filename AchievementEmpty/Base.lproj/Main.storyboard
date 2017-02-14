@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FCc-Ke-gQD">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Achievements-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AchievementEmpty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2s4-Q8-l8R">
+                                <rect key="frame" x="56" y="95.5" width="208" height="377"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="box icon" translatesAutoresizingMaskIntoConstraints="NO" id="yA6-1E-wCc">
+                                        <rect key="frame" x="59.5" y="20" width="90" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="0Ni-eJ-i9V"/>
+                                            <constraint firstAttribute="height" constant="100" id="kge-dG-weu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-k7-k2K">
+                                        <rect key="frame" x="10" y="241" width="188" height="41"/>
+                                        <string key="text">Learn how you can
+get achievements</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-BY-6e0">
+                                        <rect key="frame" x="10" y="160" width="188" height="41"/>
+                                        <string key="text">OH NO! YOU HAVE NO
+ACHIEVEMENTS</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfS-hF-kBD" customClass="AppButton" customModule="AchievementEmpty" customModuleProvider="target">
+                                        <rect key="frame" x="44.5" y="322" width="120" height="35"/>
+                                        <color key="backgroundColor" red="0.22498673199999999" green="0.75355786089999999" blue="0.35765209790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="CS9-51-u87"/>
+                                            <constraint firstAttribute="width" constant="120" id="Xuo-P9-PWd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="LEARN NOW">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Tpg-BY-6e0" firstAttribute="top" secondItem="yA6-1E-wCc" secondAttribute="bottom" constant="40" id="1aQ-xr-NMD"/>
+                                    <constraint firstItem="vfS-hF-kBD" firstAttribute="centerX" secondItem="2s4-Q8-l8R" secondAttribute="centerX" id="3vy-Mg-NQH"/>
+                                    <constraint firstItem="yA6-1E-wCc" firstAttribute="top" secondItem="2s4-Q8-l8R" secondAttribute="top" constant="20" id="EII-t2-xc9"/>
+                                    <constraint firstItem="elZ-k7-k2K" firstAttribute="top" secondItem="Tpg-BY-6e0" secondAttribute="bottom" constant="40" id="Luz-bs-x4Z"/>
+                                    <constraint firstItem="Tpg-BY-6e0" firstAttribute="centerX" secondItem="2s4-Q8-l8R" secondAttribute="centerX" id="SPw-wT-t7d"/>
+                                    <constraint firstItem="elZ-k7-k2K" firstAttribute="leading" secondItem="2s4-Q8-l8R" secondAttribute="leading" constant="10" id="Vbt-UV-vPb"/>
+                                    <constraint firstItem="Tpg-BY-6e0" firstAttribute="leading" secondItem="2s4-Q8-l8R" secondAttribute="leading" constant="10" id="auf-Q4-oIL"/>
+                                    <constraint firstItem="elZ-k7-k2K" firstAttribute="centerX" secondItem="2s4-Q8-l8R" secondAttribute="centerX" id="fJ6-3x-RdS"/>
+                                    <constraint firstAttribute="bottom" secondItem="vfS-hF-kBD" secondAttribute="bottom" constant="20" id="ilq-UB-Fpy"/>
+                                    <constraint firstAttribute="height" constant="377" id="yUQ-gk-6xc"/>
+                                    <constraint firstItem="yA6-1E-wCc" firstAttribute="centerX" secondItem="2s4-Q8-l8R" secondAttribute="centerX" id="yZ5-nw-Atb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2s4-Q8-l8R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ec-vs-vTB"/>
+                            <constraint firstItem="2s4-Q8-l8R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="Ivt-EA-a1E"/>
+                            <constraint firstItem="2s4-Q8-l8R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fsg-Ea-Lpw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Achievements" id="8a3-GZ-rbw">
+                        <barButtonItem key="leftBarButtonItem" image="menudot" id="HR8-Ds-R6G"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113.75" y="123.59154929577466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LH9-Ed-EVF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FCc-Ke-gQD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iet-Ad-Zla">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QYP-z0-Tzp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KxW-wU-Io6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="786.97183098591552"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="box icon" width="185" height="200"/>
+        <image name="menudot" width="37" height="28"/>
+    </resources>
+</document>
